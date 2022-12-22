@@ -1,0 +1,10 @@
+nav {
+    border: 1px solid rgb(246, 194, 172);
+    display: block;
+    margin: 0px 0px;
+}
+
+#icons {
+    font-size: 20px;
+    font-weight:500;
+}

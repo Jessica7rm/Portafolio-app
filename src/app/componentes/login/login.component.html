@@ -1,0 +1,16 @@
+<div class="login-container">
+    <form [formGroup]="form">
+      <h2 class="fw-bold mb-2">Acceso al portfolio</h2>
+      <p class="mb-5">Ingresa tu usuario y contraseña</p>
+  
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-elabel">
+            <label>Usuario</label>
+            <input matInput type="text" formControlName="usserName" id="usserName" name="usserName">
+        </div>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <label>Password</label>
+            <input matInput type="password" formControlName="password" id="password" name="password">
+        </div>
+        <button mat-raised-button color="accent" type="submit">Login</button>
+        <a mat-button href="/">Volver</a>
+      </form>

@@ -1,7 +1,7 @@
 <nav>
-    <nav class="navbar navbar-expand-lg" style="background-color: #ead4f7;">
+    <nav class="navbar navbar-expand-lg" style="background-color: #c0d7e8;">
       <div class="container-fluid">
-        <a class="navbar-brand" ><img src="imagenes/logo_arg.png"></a>
+        <a class="navbar-brand" ><img src="assets/imagenes/logo_arg.png"></a>
         <h3> #YoProgramo</h3>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -9,7 +9,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0" id="icons">
             <li class="nav-item">
-              <a class="nav-link"  href="#"></a>
+              <a class="nav-link"  href="https://github.com/Jessica7rm"><i class="bi bi-github"></i> Github</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="https://www.linkedin.com/in/jessica7rm/"><i class="bi bi-linkedin"></i> Linkedin</a>
@@ -22,10 +22,10 @@
             </li>
             
           </ul>
-          <button class="btn btn-outline-dark btn-lg" type="submit">Login</button>
+          <li *ngIf="!isLogged"><a href="/login"><i class="btn btn-outline-dark btn-lg">Login</i></a></li>
+            <li *ngIf="isLogged"><i class="fa-solid fa-arrow-right-from-bracket icono-logueo" ></i>
+            </li>
         </div>
       </div>
     </nav>
   </nav>
-          
-      

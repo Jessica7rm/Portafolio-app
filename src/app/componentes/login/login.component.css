@@ -1,0 +1,14 @@
+register-btn{
+    font-weight: bold;
+    color: inherit;
+}
+
+a {
+    color: inherit;
+}
+
+@media (max-width: 550px) {
+    .form-login {
+        width: 85%;
+    }
+}

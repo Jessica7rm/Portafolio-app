@@ -11,6 +11,7 @@ import { ProyectosComponent } from './componentes/proyectos/proyectos.component'
 import { LoginComponent } from './componentes/login/login.component';
 import { PortafolioComponent } from './componentes/portafolio/portafolio.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { FooterComponent } from './componentes/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     ProyectosComponent,
     LoginComponent,
     PortafolioComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

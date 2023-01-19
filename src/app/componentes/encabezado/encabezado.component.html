@@ -22,7 +22,8 @@
         </li>
 
       </ul>
-      <button class="btn btn-outline-dark btn-lg" type="submit">Login</button>
+      <button (click)="login()" *ngIf="!isLogged" class="btn btn-outline-dark btn-lg" type="submit">Login</button>
+      <button (click)="onLogOut()" *ngIf="isLogged" class="btn btn-outline-dark btn-lg" type="submit">LogOut</button>
     </div>
   </div>
 </nav>

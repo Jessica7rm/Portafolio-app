@@ -1,0 +1,11 @@
+.gradient-custom {
+    background: #6a11cb;
+    
+    background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgb(208, 56, 238));
+    
+    background: linear-gradient(to right, rgba(106, 17, 203, 1), rgb(226, 116, 248));
+   }
+
+    h2 {
+        text-align: center;
+    }   

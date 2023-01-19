@@ -7,7 +7,7 @@ import { Persona } from 'src/app/model/persona.model';
   styleUrls: ['./encabezado.component.css']
 })
 export class EncabezadoComponent implements OnInit{
-  persona: Persona = new Persona("", "", "", "", "", 0, "", "", "");
+  persona: Persona = new Persona("", "", "", "", "");
 
   isLogged: boolean = false;
 

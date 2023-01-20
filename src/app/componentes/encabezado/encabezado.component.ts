@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { TokenService } from 'src/app/servicios/token.service';
-
 @Component({
   selector: 'app-encabezado',
   templateUrl: './encabezado.component.html',

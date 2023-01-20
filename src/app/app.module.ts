@@ -13,6 +13,7 @@ import { PortafolioComponent } from './componentes/portafolio/portafolio.compone
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FooterComponent } from './componentes/footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
+import { interceptorProvider } from './servicios/interceptor-service';
  
 @NgModule({
   declarations: [
@@ -34,7 +35,9 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule,
     HttpClientModule,
   ],
-  providers: [],
+  providers: [
+    interceptorProvider
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

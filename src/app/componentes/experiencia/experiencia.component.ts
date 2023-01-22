@@ -12,13 +12,14 @@ import { TokenService } from 'src/app/servicios/token.service';
 })
 
 export class ExperienciaComponent implements OnInit {
+[x: string]: any;
   experiencia: Experiencia[] = [];
 
   constructor(
     private sExperiencia: SExperienciaService,
     private tokenService: TokenService,
     private router: Router
-  ) { }
+  ) {}
 
   isLogged = false;
 
@@ -51,4 +52,3 @@ export class ExperienciaComponent implements OnInit {
     this.router.navigate(['']);
   }
 }
-

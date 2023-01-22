@@ -14,6 +14,16 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FooterComponent } from './componentes/footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
 import { interceptorProvider } from './servicios/interceptor-service';
+import { EditAcercaDeComponent } from './componentes/acerca-de/edit-acerca-de.component';
+import { EditExperienciaComponent } from './componentes/experiencia/edit-experiencia.component';
+import { NewExperienciaComponent } from './componentes/experiencia/new-experiencia.component';
+import { EditEducacionComponent } from './componentes/educacion/edit-educacion.component';
+import { NewEducacionComponent } from './componentes/educacion/new-educacion.component';
+import { NewProyectoComponent } from './componentes/proyectos/new-proyecto.component';
+import { EditProyectoComponent } from './componentes/proyectos/edit-proyecto.component';
+import { EditHabilidadComponent } from './componentes/habilidades/edit-habilidad.component';
+import { NewHabilidadComponent } from './componentes/habilidades/new-habilidad.component';
+
  
 @NgModule({
   declarations: [
@@ -27,6 +37,16 @@ import { interceptorProvider } from './servicios/interceptor-service';
     LoginComponent,
     PortafolioComponent,
     FooterComponent,
+    EditAcercaDeComponent,
+    EditExperienciaComponent,
+    NewExperienciaComponent,
+    EditEducacionComponent,
+    NewEducacionComponent,
+    NewProyectoComponent,
+    EditProyectoComponent,
+    EditHabilidadComponent,
+    NewHabilidadComponent,
+    
   ],
   imports: [
     BrowserModule,

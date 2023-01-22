@@ -1,129 +1,44 @@
-<h1>Experiencia</h1>
-        
+<div>
+  <h1>Experiencia</h1>
+</div>
+
+<div class="col text-end">
+  <button type="button" class="btn btn-sm btn-outline-secondary bi bi-plus-square" routerLink="/nuevaexp"
+    *ngIf="isLogged">
+    Añadir
+  </button>
+</div>
+
+<div class="row" *ngIf="experiencia?.length == 0">
+  <p style="color: rgb(162, 192, 196)">No hay experiencias registradas</p>
+</div>
 <div class="container" id="Experiencia">
   <div class="row">
-    <div class="card mb-3" id="Exper" style="max-width: 540px;">
-      <div class="row g-0">
-        <div class="btn_edicion">
-          <i class="bi bi-pencil-square" id="edicion-btn"></i>
-          <i class="bi bi-x-square"></i>
-        </div>
-        <div class="col-md-4">
-          <h5 class="card-title"></h5>
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <p class="card-text"></p>
-            <p class="card-text"> Cobros, servicio de comida, organización.</p>
-            <p class="card-text"><small class="text-muted"></small></p>
+    <div *ngFor="let Experiencia of experiencia">
+      <div class="card mb-3" id="Exper" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <h5 class="card-title">{{Experiencia.empresaExpe}}</h5>
           </div>
-        </div>
-      </div>
-    </div>
-    <div class="card mb-3" id="Exper" style="max-width: 540px;">
-      <div class="row g-0">
-        <div class="btn_edicion">
-          <i class="bi bi-pencil-square" id="edicion-btn"></i>
-          <i class="bi bi-x-square"></i>
-        </div>
-        <div class="col-md-4">
-          <h5 class="card-title">La doma</h5>
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <p class="card-text">Personal de cocina</p>
-            <p class="card-text"> Preparacion platos y postres. Trabajo en equipo.</p>
-            <p class="card-text"><small class="text-muted">Junio 2010 - Noviembre 2011</small></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="card mb-3" id="Exper" style="max-width: 540px;">
-      <div class="row g-0">
-        <div class="btn_edicion">
-          <i class="bi bi-pencil-square" id="edicion-btn"></i>
-          <i class="bi bi-x-square"></i>
-        </div>
-        <div class="col-md-4">
-          <h5 class="card-title">Hosteria del ghetto</h5>
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <p class="card-text"> Cocina kosher</p>
-            <p class="card-text"> Cocinar comida kosher</p>
-            <p class="card-text"><small class="text-muted">Enero 2012 - Junio 2013</small></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="card mb-3" id="Exper" style="max-width: 540px;">
-      <div class="row g-0">
-        <div class="btn_edicion">
-          <i class="bi bi-pencil-square" id="edicion-btn"></i>
-          <i class="bi bi-x-square"></i>
-        </div>
-        <div class="col-md-4">
-          <h5 class="card-title">Mayim Rabim</h5>
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <p class="card-text">Personal de sala </p>
-            <p class="card-text"> Servicio sala. Atencón al cliente.</p>
-            <p class="card-text"><small class="text-muted">2015 - 2016</small></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="card mb-3" id="Exper" style="max-width: 540px;">
-      <div class="row g-0">
-        <div class="btn_edicion">
-          <i class="bi bi-pencil-square" id="edicion-btn"></i>
-          <i class="bi bi-x-square"></i>
-        </div>
-        <div class="col-md-4">
-          <h5 class="card-title">Dolce Cucina</h5>
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <p class="card-text">Responsable de Producción y venta </p>
-            <p class="card-text">Pastelería, Panificación y Pastas Artesanales </p>
-            <p class="card-text"><small class="text-muted">Mayo 2017 - Junio 2022</small></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="card mb-3" id="Exper" style="max-width: 540px;">
-      <div class="row g-0">
-        <div class="btn_edicion">
-          <i class="bi bi-pencil-square" id="edicion-btn"></i>
-          <i class="bi bi-x-square"></i>
-        </div>
-        <div class="col-md-4">
-          <h5 class="card-title">Catering y Banquetes</h5>
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <p class="card-text">Personal de cocina</p>
-            <p class="card-text"> Preparacion platos y postres. Trabajo en equipo.</p>
-            <p class="card-text"><small class="text-muted">Junio 2010 - Noviembre 2011</small></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="card mb-3" id="Exper" style="max-width: 540px;">
-      <div class="row g-0">
-        <div class="btn_edicion">
-          <i class="bi bi-pencil-square" id="edicion-btn"></i>
-          <i class="bi bi-x-square"></i>
-        </div>
-        <div class="col-md-4">
-          <h5 class="card-title">Parque Historico D.L.B. </h5>
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <p class="card-text"> Responsable Cocina </p>
-            <p class="card-text"> Preparación platos y postres.</p>
-            <p class="card-text"><small class="text-muted">Enero 2012 - Junio 2013</small></p>
+          <div class="col-md-8">
+            <div class="card-body">
+              <p class="card-text">{{Experiencia.nombreExpe}}</p>
+              <p class="card-text">{{Experiencia.descripcionExpe}}</p>
+              <p class="card-text"><small class="text-muted">{{ Experiencia.fechainicio }} - {{ Experiencia.fechafin
+                  }}</small></p>
+            </div>
+            <div class="col-6 col-sm-1">
+              <button *ngIf="isLogged" class="bi bi-pencil btn btn-sm btn-outline-dark"
+                routerLink="/editexp/{{ Experiencia.id }}">
+                Editar
+              </button>
+            </div>
+            <div class="col-6 col-sm-1">
+              <button *ngIf="isLogged" title="delete" class="bi bi-trash3-fill btn btn-sm btn-outline-danger"
+                (click)="delete(Experiencia.id)">
+                Borrar
+              </button>
+            </div>
           </div>
         </div>
       </div>

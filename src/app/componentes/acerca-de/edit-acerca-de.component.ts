@@ -15,7 +15,7 @@ export class EditAcercaDeComponent implements OnInit {
   constructor(
     public personaService: PersonaService,
     private tokenService: TokenService,
-    private activatedRouter: ActivatedRoute,
+    private activatedRoute: ActivatedRoute,
     private router: Router
   ) { }
 

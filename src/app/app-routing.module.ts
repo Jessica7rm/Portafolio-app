@@ -7,11 +7,14 @@ import { PortafolioComponent } from './componentes/portafolio/portafolio.compone
 const routes: Routes = [
   {path:'',component:PortafolioComponent},
   {path:'login',component:LoginComponent },
-  {path:'editAbout/:id',component:EditAcercaDeComponent},
+  {path:'editAcerca/:id',component:EditAcercaDeComponent},
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  imports: [RouterModule.forRoot(routes,
+    {
+      useHash: true,
+    })],
+  exports: [RouterModule],
 })
 export class AppRoutingModule { }

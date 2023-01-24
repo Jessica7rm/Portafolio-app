@@ -12,7 +12,6 @@ import { TokenService } from 'src/app/servicios/token.service';
 })
 
 export class ExperienciaComponent implements OnInit {
-[x: string]: any;
   experiencia: Experiencia[] = [];
 
   constructor(

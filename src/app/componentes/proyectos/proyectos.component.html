@@ -1,16 +1,14 @@
-<div class="container-fluid" id="ir-proyectos">
-  <div class="row">
-    <div class="col text-start">
-      <h1>Proyectos</h1>
-    </div>
-    <div class="col text-end">
-      <button routerLink="/newproyecto" class="btn btn-sm btn-outline-secondary bi bi-plus-square" *ngIf="isLogged">
-        Agregar
-      </button>
-    </div>
-    <div class="row" *ngIf="proyectos?.length == 0">
-      <p style="color: rgb(171, 248, 236)">No hay proyectos para mostrar</p>
-    </div>
+<div>
+  <h1>Proyectos</h1>
+</div>
+<div class="col text-end">
+  <button routerLink="/newproyecto" class="btn btn-sm btn-outline-secondary bi bi-plus-square" *ngIf="isLogged">
+    Agregar
+  </button>
+</div>
+<div class="row" id="vacio" *ngIf="proyectos?.length == 0">
+  <p style="color: rgb(8, 82, 71)">No hay proyectos para mostrar</p>
+</div>
 
     <div class="card mb-3">
       <li class="list-group-item" *ngFor="let Proyecto of proyectos">
@@ -43,5 +41,4 @@
         </div>
       </li>
     </div>
-  </div>
-</div>
+

@@ -1,5 +1,15 @@
-.row{
+#vacio{
     padding: 20px;
-    background-color: #a1b5cb;
+    background-color: #e4e2e1d5;
 }
+
+*{
+   text-align: center
+}
+
+img{
+    padding: auto;
+    width: 80%;
+ }
+
 

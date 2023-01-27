@@ -23,7 +23,7 @@ import { NewProyectoComponent } from './componentes/proyectos/new-proyecto.compo
 import { EditProyectoComponent } from './componentes/proyectos/edit-proyecto.component';
 import { EditHabilidadComponent } from './componentes/habilidades/edit-habilidad.component';
 import { NewHabilidadComponent } from './componentes/habilidades/new-habilidad.component';
-
+import { NgCircleProgressModule } from 'ng-circle-progress';
  
 @NgModule({
   declarations: [
@@ -54,6 +54,7 @@ import { NewHabilidadComponent } from './componentes/habilidades/new-habilidad.c
     ReactiveFormsModule,
     FormsModule,
     HttpClientModule,
+    NgCircleProgressModule.forRoot({})
   ],
   providers: [
     interceptorProvider

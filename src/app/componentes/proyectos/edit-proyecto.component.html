@@ -1,0 +1,102 @@
+<div class="container-fluid mt-3">
+    <form #f="ngForm" class="needs-validation" novalidate text-center>
+      <div class="row">
+        <div class="col-12 col-md-4">
+          <label for="nombreProyecto" class="form-label">Nombre proyecto :</label>
+        </div>
+        <div class="col-12 col-md">
+          <input
+            type="text"
+            id="nombreProyecto"
+            name="nombreProyecto"
+            [(ngModel)]="proyecto.nombreProyecto"
+            required
+            class="form-control"
+          />
+          <div class="invalid-feedback">Campo obligatorio.</div>
+          <div class="valid-feedback">Campo completo.</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-4">
+          <label for="imgproyecto" class="form-label">Imagen (link) :</label>
+        </div>
+        <div class="col-12 col-md">
+          <input
+            type="text"
+            required
+            class="form-control"
+            id="imgproyecto"
+            name="imgproyecto"
+            [(ngModel)]="proyecto.imgProyecto"
+          />
+          <div class="invalid-feedback">Campo obligatorio.</div>
+          <div class="valid-feedback">Campo completo.</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-4">
+          <label for="descripcionProyecto" class="form-label"
+            >Descripción del proyecto :</label
+          >
+        </div>
+        <div class="col-12 col-md">
+          <textarea
+            type="text"
+            required
+            class="form-control"
+            name="descripcionProyecto"
+            id="descripcionProyecto"
+            [(ngModel)]="proyecto.descripcionProyecto"
+          ></textarea>
+          <div class="invalid-feedback">Campo obligatorio.</div>
+          <div class="valid-feedback">Campo completo.</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-4">
+          <label for="linkproyecto" class="form-label"
+            >Link hacia el proyecto :</label
+          >
+        </div>
+        <div class="col-12 col-md">
+          <input
+            type="text"
+            class="form-control"
+            name="linkproyecto"
+            id="linkproyecto"
+            [(ngModel)]="proyecto.linkProyecto"
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-4">
+          <label for="fechaProyecto" class="form-label"
+            >Fecha realización :</label
+          >
+        </div>
+        <div class="col-12 col-md">
+          <input
+            type="text"
+            class="form-control"
+            name="fechaProyecto"
+            id="fechaProyecto"
+            [(ngModel)]="proyecto.fechaProyecto"
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <button type="submit" class="btn btn-success" (click)="onUpdate()">
+            Actualizar
+          </button>
+        </div>
+        <div class="col">
+          <button class="btn btn-md btn-outline-secondary" [routerLink]="'/'">
+            Volver sin cambios
+        </button>
+        </div>
+      </div>
+    </form>
+  </div>
+  

@@ -1,9 +1,9 @@
 <div class="row">
   <h1>Educacion</h1>
   <br>
-  <div class="col-lg-2">
-    <button type="button" class="btn btn-dark" routerLink="/nuevaedu" *ngIf="isLogged">
-      Agregar Educacion
+  <div class="col text-end" id="new">
+    <button type="button" class="btn btn-outline-dark bi bi-plus-square" routerLink="/nuevaedu" *ngIf="isLogged">
+      Añadir Educacion
     </button>
   </div>
   <div class="row" id="vacio" *ngIf="educacion?.length == 0">

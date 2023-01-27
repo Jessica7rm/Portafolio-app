@@ -1,1 +1,88 @@
-<p>edit-educacion works!</p>
+<div class="container-fluid mt-3" *ngIf="educacion">
+    <form #form="ngForm" class="needs-validation" novalidate>
+      <div class="row">
+        <div class="col-12 col-md-4">
+          <label for="institucion" class="form-label">Nombre institución :</label>
+        </div>
+        <div class="col-12 col-md">
+          <input
+            class="form-control"
+            type="text"
+            id="institucion"
+            name="institucion"
+            [(ngModel)]="educacion.institucion"
+            required
+          />
+          <div class="invalid-feedback">Campo obligatorio.</div>
+          <div class="valid-feedback">Campo completo.</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-4">
+          <label for="titulo" class="form-label"
+            >Título :</label
+          >
+        </div>
+        <div class="col-12 col-md">
+          <input
+            class="form-control"
+            type="text"
+            id="titulo"
+            name="titulo"
+            [(ngModel)]="educacion.titulo"
+            required
+          />
+          <div class="invalid-feedback">Campo obligatorio.</div>
+          <div class="valid-feedback">Campo completo.</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-4">
+          <label for="fechainicio" class="form-label">Fecha Inicio :</label>
+        </div>
+        <div class="col-12 col-md">
+          <input
+            class="form-control"
+            type="text"
+            id="fechainicio"
+            name="fechainicio"
+            [(ngModel)]="educacion.fechainicio"
+            required
+            placeholder="Formato MM/AAAA"
+          />
+          <div class="invalid-feedback">Campo obligatorio.</div>
+          <div class="valid-feedback">Campo completo.</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-4">
+          <label for="fechafin" class="form-label">Fecha Fin :</label>
+        </div>
+        <div class="col-12 col-md">
+          <input
+            class="form-control"
+            type="text"
+            id="fechafin"
+            name="fechafin"
+            [(ngModel)]="educacion.fechafin"
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <button
+            class="btn btn-md btn-success"
+            type="submit"
+            (click)="onUpdate()"
+          >
+            Actualizar
+          </button>
+        </div>
+        <div class="col">
+          <button class="btn btn-md btn-outline-secondary" [routerLink]="'/'">
+            Volver sin cambios
+        </button>
+        </div>
+      </div>
+    </form>
+  </div>

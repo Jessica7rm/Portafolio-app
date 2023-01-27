@@ -8,7 +8,7 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-lg-2" id="image-profile">
-        <img class="profile-image" src="{{persona.img}}" alt="Foto Perfil"/>
+        <img class="profile-image" src="{{persona.img}}" alt="Foto Perfil" />
 
       </div>
       <div class="col-lg-10" id="info-datos">
@@ -22,15 +22,14 @@
 
 <div class="container-fluid" id="descripción">
   <div class="row">
-
-    <h1>Acerca de</h1>
-     <p id="acerca">{{persona.acerca}}</p>
-    <button 
-        type="button"
-        class="btn btn-outline-secondary bi bi-pencil-square"
-        *ngIf="isLogged"
-        routerLink="/editAcerca/{{ persona.id }}"
-        title="Editar" >Editar
+    <div class="col text-end">
+      <button type="button" class="btn btn-outline-dark bi bi-plus-square"  *ngIf="isLogged"
+      routerLink="/editAcerca/{{ persona.id }}" title="Editar"> Editar datos personales  
       </button>
+    </div>
+
+    <h1>Acerca de mi</h1>
+    <p id="acerca">{{persona.acerca}}</p>
+
   </div>
 </div>

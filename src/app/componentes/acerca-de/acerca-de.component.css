@@ -1,0 +1,29 @@
+#banner img {
+    padding: 20px;
+    background-color: #e4e2e1d5;
+ }
+
+ #first-card {
+    background-color: #e4e2e1d5;
+    margin: 0px 0px;
+    padding: 20px;
+    z-index: auto;
+ }
+
+.profile-image {
+    border-radius: 30%;
+    width: 170px; 
+    height: 190px;
+    z-index: auto;  
+ }
+
+ #info-datos h1, h2 {
+   margin-top: 10px;
+   text-align: initial;
+}
+
+#descripción {
+   padding: 50px;
+   margin: auto;
+   text-align: center;
+}

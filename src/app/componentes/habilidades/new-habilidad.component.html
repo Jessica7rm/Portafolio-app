@@ -1,20 +1,36 @@
-<div class="container">
-    <div class="row">
-        <div>
-            <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
-                <div class="form-group">
-                    <label for="nombre">Nueva Skill</label>
-                    <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="nombreSkill" required>
-                </div>
-                <div class="form-group">
-                    <label for="porcentaje">Porcentaje</label>
-                    <input type="text" class="form-control" id="porcentaje" name="porcentaje" [(ngModel)]="porcentaje" required>
-                </div>
-                <button class="btn btn-primary">
-                    Agregar skill
-                </button>
-            </form>
+<div class="container-fluid mt-3">
+    <form #f="ngForm" class="needs-validation" novalidate>
+        <div class="row">
+            <div class="col-12 col-md-4 text-start">
+                <label for="nombreSkill" class="form-label">Nombre habilidad :</label>
+            </div>
+            <div class="col-12 col-md">
+                <input type="text" id="nombreSkill" name="nombreSkill" [(ngModel)]="nombreSkill" required
+                    class="form-control" />
+                <div class="invalid-feedback">Campo obligatorio.</div>
+                <div class="valid-feedback">Campo completo.</div>
+            </div>
         </div>
-    </div>
+        <div class="row">
+            <div class="col-12 col-md-4">
+                <label for="porcentaje" class="form-label">Porcentaje:</label>
+            </div>
+            <div class="col-12 col-md-2">
+                <input type="number" min="0" max="100" id="porcentaje" name="porcentaje" [(ngModel)]="porcentaje"
+                    required class="form-control" />
+                <div class="invalid-feedback">Campo obligatorio. Max. 100.</div>
+                <div class="valid-feedback">Campo completo.</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <button type="submit" class="btn btn-success" (click)="onCreate()">
+                    Enviar
+                </button>
+            </div>
+            <div class="col">
+                <button class="btn btn-primary" [routerLink]="'/'">Volver</button>
+            </div>
+        </div>
+    </form>
 </div>
-

@@ -1,0 +1,19 @@
+@media screen and (min-width:800px) {
+    .container-fluid {
+        width: 60%;
+        margin: 25%;
+        padding: 2rem;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+}
+
+.row {
+    margin: .5rem;
+    padding: 1rem;
+}
+
+form {
+    outline: 2px solid rgb(144, 48, 155);
+}

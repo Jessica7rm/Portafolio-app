@@ -1,1 +1,37 @@
-<p>edit-habilidad works!</p>
+<div class="container-fluid mt-3">
+    <form #f="ngForm" class="needs-validation" novalidate>
+      <div class="row">
+        <div class="col-12 col-md-4 text-start">
+          <label for="nombreSkill" class="form-label">Nombre habilidad :</label>
+        </div>
+        <div class="col-12 col-md">
+          <input type="text" id="nombreSkill" name="nombreSkill" [(ngModel)]="skill.nombreSkill" required
+            class="form-control" />
+          <div class="invalid-feedback">Campo obligatorio.</div>
+          <div class="valid-feedback">Campo completo.</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-4">
+          <label for="porcentaje" class="form-label">Porcentaje :</label>
+        </div>
+        <div class="col-12 col-md">
+          <input type="number" min="0" max="100" id="porcentaje" name="porcentaje" [(ngModel)]="skill.porcentaje" required
+            class="form-control" />
+          <div class="invalid-feedback">Campo obligatorio. Max. 100.</div>
+          <div class="valid-feedback">Campo completo.</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <button type="submit" class="btn btn-success" (click)="onUpdate()">
+            Enviar
+          </button>
+        </div>
+        <div class="col">
+          <button class="btn btn-primary" [routerLink]="'/'">Volver</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  

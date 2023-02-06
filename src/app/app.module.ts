@@ -56,9 +56,7 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
     HttpClientModule,
     NgCircleProgressModule.forRoot({})
   ],
-  providers: [
-    interceptorProvider
-  ],
+  providers: [interceptorProvider],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

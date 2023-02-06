@@ -15,6 +15,12 @@
             <div class="valid-feedback">Campo completo.</div>
         </div>
         <div class="row mb-3">
+            <label class="form-label" for="Foto">Foto Perfil : </label>
+            <input class="form-control" type="text" id="img" name="img" [(ngModel)]="persona.img" required />
+            <div class="invalid-feedback">Campo obligatorio.</div>
+            <div class="valid-feedback">Campo completo.</div>
+        </div>
+        <div class="row mb-3">
             <label class="form-label" for="titulo">Título : </label>
             <input class="form-control" type="text" id="titulo" name="titulo" [(ngModel)]="persona.titulo" required />
             <div class="invalid-feedback">Campo obligatorio.</div>

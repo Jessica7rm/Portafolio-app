@@ -21,3 +21,8 @@ h1 {
 #new {
     padding: 20px;
 }
+
+.custom-container {
+   align-items: center;
+  }
+  
